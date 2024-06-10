@@ -1,11 +1,11 @@
-# Fornecedores Dashboard
+# Dashboard de Fornecedores
 
 Este é um projeto de dashboard para gerenciamento de fornecedores. Ele permite que os usuários façam login, visualizem uma lista de fornecedores, cadastrem novos fornecedores, editem e excluam fornecedores, além de alterar suas senhas.
 
 ## Tecnologias Utilizadas
 
 - **Frontend**: React, React Router, Ant Design
-- **Backend**: Node.js, Express.js
+- **Backend**: Node.js, Json-server
 - **Gerenciamento de Estado**: Context API
 
 ## Funcionalidades
