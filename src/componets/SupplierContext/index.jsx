@@ -10,7 +10,7 @@ const SupplierProvider = ({ children }) => {
   useEffect(() => {
     const loadData = async () => {
       try {
-        const data = await fetch(API + "suppliers").then((res) => res.json());
+        const data = await fetch(API + "/suppliers").then((res) => res.json());
         console.log("Dados carregados:", data);
         setSuppliers(data);
       } catch (error) {
