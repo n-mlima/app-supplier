@@ -8,7 +8,7 @@
   "dev:vite": "vite",
   "dev:server": "json-server --watch data/db.json --port 5000",
   "start": "vite",
-  "build": "react-scripts build",
+  "build": "vite build",
   "test": "react-scripts test",
   "eject": "react-scripts eject",
   "preview": "vite preview"
