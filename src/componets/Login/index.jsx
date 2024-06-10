@@ -53,7 +53,7 @@ const Login = () => {
   return (
     <div className={styles.login_container}>
       <div className={styles.div_logo}>
-        <img className={styles.img_logo} src='/public/logo01.png'/>
+        <img className={styles.img_logo} src='/logo01.png'/>
       </div>
       
       <Form>
