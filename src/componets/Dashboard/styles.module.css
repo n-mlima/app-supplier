@@ -1,0 +1,61 @@
+.dashboard {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  height: 100vh;
+  padding: 1rem;
+  
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Faz com que os itens fiquem em coluna */
+  gap: 3rem; /* Adiciona espaçamento entre os itens */
+}
+
+.sidebar_item {
+  display: block; /* Garante que os itens ocupem a largura total */
+  font-size: 1.8rem;
+  color: white; /* Ajusta a cor do texto */
+  text-decoration: none; /* Remove a sublinha dos links */
+  padding: 10px 0; /* Espaçamento interno */
+  transition: background 0.3s ease; /* Suaviza a transição do background */
+}
+
+.sidebar_item:hover {
+  background-color: #34495e; /* Cor de fundo ao passar o mouse */
+}
+
+.content {
+  flex-grow: 1;
+  padding: 1rem;
+}
+.logout_btt{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  width: 100px;
+  margin-top: 10rem;
+  background-color:  #34495e; /* Sidebar background color */
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.logout_btt:hover{
+  background-color: #315274; /* Hover color */
+}
+
+
+
+  
+  
