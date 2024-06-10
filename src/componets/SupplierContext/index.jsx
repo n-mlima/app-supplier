@@ -29,7 +29,7 @@ const SupplierProvider = ({ children }) => {
       if (user) {
         user.password = newPassword;
 
-        await fetch(`${API}users/${user.id}`, {
+        await fetch(`${API}/users/${user.id}`, {
           method: 'PUT',
           body: JSON.stringify(user),
           headers: {
