@@ -2,7 +2,7 @@ import { createContext, useState, useEffect } from 'react';
 
 const SupplierContext = createContext();
 
-const API = process.env.REACT_APP_API_URL || "http://localhost:5000";
+const API = "https://api-app-supplier.vercel.app" // ou rode local"http://localhost:5000";
 
 const SupplierProvider = ({ children }) => {
   const [suppliers, setSuppliers] = useState([]);
@@ -10,7 +10,7 @@ const SupplierProvider = ({ children }) => {
   useEffect(() => {
     const loadData = async () => {
       try {
-        const data = await fetch(API + "/suppliers").then((res) => res.json());
+        const data = await fetch(API + "suppliers").then((res) => res.json());
         console.log("Dados carregados:", data);
         setSuppliers(data);
       } catch (error) {
@@ -23,13 +23,13 @@ const SupplierProvider = ({ children }) => {
 
   const changePassword = async (name, oldPassword, newPassword) => {
     try {
-      const users = await fetch(API + "/users").then((res) => res.json());
+      const users = await fetch(API + "users").then((res) => res.json());
       const user = users.find(user => user.userName === name && user.password === oldPassword);
       
       if (user) {
         user.password = newPassword;
 
-        await fetch(`${API}/users/${user.id}`, {
+        await fetch(`${API}users/${user.id}`, {
           method: 'PUT',
           body: JSON.stringify(user),
           headers: {
@@ -49,7 +49,7 @@ const SupplierProvider = ({ children }) => {
 
   const addSupplier = async (supplier) => {
     try {
-      await fetch(API + "/suppliers", {
+      await fetch(API + "suppliers", {
         method: 'POST',
         body: JSON.stringify(supplier),
         headers: {
@@ -64,7 +64,7 @@ const SupplierProvider = ({ children }) => {
 
   const deleteSupplier = async (id) => {
     try {
-      await fetch(API + "/suppliers/" + id, {
+      await fetch(API + "suppliers/" + id, {
         method: "DELETE",
       });
       setSuppliers((prev) => prev.filter((item) => item.id !== id));
@@ -75,7 +75,7 @@ const SupplierProvider = ({ children }) => {
   
   const putSupplier = async (id, updatedSupplier) => {
     try {
-      const response = await fetch(API + "/suppliers/" + id, {
+      const response = await fetch(API + "suppliers/" + id, {
         method: "PUT",
         body: JSON.stringify(updatedSupplier),
         headers: {
