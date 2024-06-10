@@ -2,7 +2,7 @@ import { createContext, useState, useEffect } from 'react';
 
 const SupplierContext = createContext();
 
-const API = "https://api-app-supplier.vercel.app" // ou rode local"http://localhost:5000";
+const API = "https://api-app-supplier.vercel.app/" // ou rode local"http://localhost:5000";
 
 const SupplierProvider = ({ children }) => {
   const [suppliers, setSuppliers] = useState([]);
