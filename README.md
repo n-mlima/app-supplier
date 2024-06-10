@@ -43,11 +43,11 @@ Este é um projeto de dashboard para gerenciamento de fornecedores. Ele permite 
 ## Uso
 1. Login:
    
-   No primeiro acesso, use o seguinte usuário e senha padrão:
+   - No primeiro acesso, use o seguinte usuário e senha padrão:
    Usuário: admin
    Senha: admin
    
-Após fazer login, é recomendado alterar a senha na seção de configurações de usuário.
+   - Após fazer login, é recomendado alterar a senha na seção de configurações de usuário.
 
 2. Dashboard
    O dashboard possui as seguintes seções:
@@ -59,7 +59,7 @@ Após fazer login, é recomendado alterar a senha na seção de configurações 
 ## Contribuições
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
 
-##Futuras Atualizações
+## Futuras Atualizações
 - Integração com uma API real
 - Autenticação JWT
 - Melhorias na interface de usuário
