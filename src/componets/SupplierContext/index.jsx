@@ -2,7 +2,7 @@ import { createContext, useState, useEffect } from 'react';
 
 const SupplierContext = createContext();
 
-const API = "http://localhost:5000";
+const API = process.env.REACT_APP_API_URL || "http://localhost:5000";
 
 const SupplierProvider = ({ children }) => {
   const [suppliers, setSuppliers] = useState([]);
