@@ -9,8 +9,8 @@
   "dev:server": "json-server --watch data/db.json --port 5000",
   "start": "vite",
   "build": "vite build",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject",
+  "test": "vite test",
+  "eject": "vite eject",
   "preview": "vite preview"
   },
   "dependencies": {
