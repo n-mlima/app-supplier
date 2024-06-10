@@ -23,7 +23,7 @@ const SupplierProvider = ({ children }) => {
 
   const changePassword = async (name, oldPassword, newPassword) => {
     try {
-      const users = await fetch(API + "users").then((res) => res.json());
+      const users = await fetch(API + "/users").then((res) => res.json());
       const user = users.find(user => user.userName === name && user.password === oldPassword);
       
       if (user) {
@@ -49,7 +49,7 @@ const SupplierProvider = ({ children }) => {
 
   const addSupplier = async (supplier) => {
     try {
-      await fetch(API + "suppliers", {
+      await fetch(API + "/suppliers", {
         method: 'POST',
         body: JSON.stringify(supplier),
         headers: {
@@ -64,7 +64,7 @@ const SupplierProvider = ({ children }) => {
 
   const deleteSupplier = async (id) => {
     try {
-      await fetch(API + "suppliers/" + id, {
+      await fetch(API + "/suppliers/" + id, {
         method: "DELETE",
       });
       setSuppliers((prev) => prev.filter((item) => item.id !== id));
@@ -75,7 +75,7 @@ const SupplierProvider = ({ children }) => {
   
   const putSupplier = async (id, updatedSupplier) => {
     try {
-      const response = await fetch(API + "suppliers/" + id, {
+      const response = await fetch(API + "/suppliers/" + id, {
         method: "PUT",
         body: JSON.stringify(updatedSupplier),
         headers: {
