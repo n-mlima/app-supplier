@@ -6,7 +6,7 @@ import { BiHide, BiShow } from 'react-icons/bi';
 
 import styles from '../Login/styles.module.css';
 
-const API = "https://api-app-supplier.vercel.app/"
+const API = "https://api-app-supplier.vercel.app"
 
 const Login = () => {
   const [loading, setLoading] = useState(false);
