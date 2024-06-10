@@ -21,7 +21,7 @@ const Login = () => {
     const loadData = async () => {
       try {
         setLoading(true);
-        const data = await fetch(API + "users").then((res) => res.json());
+        const data = await fetch(API + "/users").then((res) => res.json());
         setLoading(false);
         setUsers(data);
       } catch (error) {
