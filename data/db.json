@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "person": "Administrador",
+      "userName": "admin",
+      "dataBirtday": "",
+      "email": "",
+      "password": "admin"
+    }
+  ],
+  "suppliers": [
+    {
+      "name": "Ibyte",
+      "cnpj": "02.587.458/7415-55",
+      "id": "8"
+    },
+    {
+      "name": "Nailson",
+      "cnpj": "78.878.788/8888-89",
+      "id": "9"
+    },
+    {
+      "id": "10",
+      "name": "José",
+      "cnpj": "05.454.545/5555-55"
+    },
+    {
+      "id": "11",
+      "name": "Dell",
+      "cnpj": "00.000.005/5555-55"
+    },
+    {
+      "id": "12",
+      "name": "Sony",
+      "cnpj": "58.877.777/7777-77"
+    },
+    {
+      "id": "13",
+      "name": "Magalu",
+      "cnpj": "88.788.888/8888-88"
+    },
+    {
+      "id": "14",
+      "name": "Embratel",
+      "cnpj": "58.777.774/4555-55"
+    }
+  ]
+}
