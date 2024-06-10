@@ -6,7 +6,7 @@ import { BiHide, BiShow } from 'react-icons/bi';
 
 import styles from '../Login/styles.module.css';
 
-const API = "http://localhost:3001";
+const API = "http://localhost:5000";
 
 const Login = () => {
   const [loading, setLoading] = useState(false);
