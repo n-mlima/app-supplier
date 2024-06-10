@@ -1,8 +1,68 @@
-# React + Vite
+# Fornecedores Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto de dashboard para gerenciamento de fornecedores. Ele permite que os usuários façam login, visualizem uma lista de fornecedores, cadastrem novos fornecedores, editem e excluam fornecedores, além de alterar suas senhas.
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend**: React, React Router, Ant Design
+- **Backend**: Node.js, Express.js
+- **Gerenciamento de Estado**: Context API
+
+## Funcionalidades
+
+- **Login**: Usuário pode fazer login com nome de usuário e senha.
+- **Gerenciamento de Fornecedores**: Adicionar, editar, visualizar e excluir fornecedores.
+- **Alteração de Senha**: Usuários podem alterar suas senhas após o login inicial.
+
+## Requisitos
+
+- Node.js
+- npm ou yarn
+
+## Como Executar o Projeto
+
+1. Clone este repositório:
+
+   ```bash
+   git clone https://github.com/n-mlima/app-supplier.git
+   
+2. Instale as dependências:
+   
+   npm install
+   
+4. Instale o json-server:
+
+   npm install json-server
+
+3. Inicie o servidores:
+
+   npm run dev
+   
+   
+
+Uso
+Login
+No primeiro acesso, use o seguinte usuário e senha padrão:
+
+Usuário: admin
+Senha: admin
+Após fazer login, é recomendado alterar a senha na seção de configurações de usuário.
+
+Dashboard
+O dashboard possui as seguintes seções:
+
+Lista de Fornecedores: Visualize todos os fornecedores cadastrados.
+Cadastrar Fornecedor: Adicione um novo fornecedor.
+Alterar/Excluir Fornecedor: Edite ou exclua fornecedores existentes.
+Configurações de Usuário: Altere sua senha.
+
+Contribuições
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
+
+Futuras Atualizações
+Integração com uma API real
+Autenticação JWT
+Melhorias na interface de usuário
+Testes automatizados
+
+
