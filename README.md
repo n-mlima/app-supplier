@@ -51,9 +51,9 @@ Este é um projeto de dashboard para gerenciamento de fornecedores. Ele permite 
 
 2. Dashboard
    O dashboard possui as seguintes seções:
-   - Lista de Fornecedores: Visualize todos os fornecedores cadastrados.
+   - Lista de Fornecedores: Visualize todos os fornecedores cadastrados e execute as ações
+     de exibir detalhes, alterar informações e excluir um fornecedor.
    - Cadastrar Fornecedor: Adicione um novo fornecedor.
-   - Alterar/Excluir Fornecedor: Edite ou exclua fornecedores existentes.
    - Configurações de Usuário: Altere sua senha.
 
 ## Contribuições
